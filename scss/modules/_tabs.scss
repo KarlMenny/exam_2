@@ -1,0 +1,45 @@
+.tabs {
+
+	&__items {
+		width: 375px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		font-size: 16px;	
+		margin-bottom: 70px;
+	}
+
+	&__link {
+		margin-bottom: 10px;
+		text-decoration: none;
+		color: #464646;
+	}
+
+	&__image {
+		display: block;
+	}
+
+	&__text {
+		text-align: right;
+		text-align: justify;
+		color: #464646;
+	}
+}
+
+.ui-tabs-active {
+	position: relative;
+
+	& a {
+		color: #464646!important;
+	}
+
+	&::after {
+		@include pos($b: -10px, $l: 50%);
+		transform: translateX(-50%);
+		content: '';
+		width: 38px;
+		height: 1px;
+		background: #19bd9a;
+	}
+}

@@ -1,0 +1,19 @@
+.portfolio {
+	text-align: center;
+	background: #f3f3f3;
+	padding: 90px 0;
+
+
+	&__title {
+		font-family: $SansPro;
+		font-weight: 300;
+		font-size: 20px;
+		color: $dark;
+		margin-bottom: 38px;
+	}
+
+	&__text {
+		color: $grey;
+		margin-bottom: 80px;
+	}
+}	

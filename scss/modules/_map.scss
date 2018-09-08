@@ -1,0 +1,17 @@
+.map {
+	text-align: center;
+	padding-top: 70px;
+
+	&__title {
+		font-family: $SansPro;
+		font-weight: 300;
+		font-size: 20px;
+		color: $dark;
+		margin-bottom: 38px;
+	}
+
+	&__text {
+		color: $grey;
+		margin-bottom: 80px;
+	}
+}

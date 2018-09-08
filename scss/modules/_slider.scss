@@ -1,0 +1,95 @@
+.slider {
+	text-align: center;
+	position: relative;
+	padding: 75px 0 170px;
+
+	&__title {
+		font-family: $SansPro;
+		font-weight: 300;
+		font-size: 20px;
+		color: $dark;
+		margin-bottom: 38px;
+	}
+
+	&__text {
+		color: $grey;
+		margin-bottom: 80px;
+	}
+
+	&__item {
+		text-align: right;
+		padding-right: 50px;
+	}
+
+	&__image {
+		float: left;
+	}
+
+	&__slide-title {
+		font-size: 20px;
+		letter-spacing: 0.4px;
+		color: #464646;
+		margin-top: 28px;
+		margin-bottom: 10px;
+		position: relative;
+		display: inline-block;
+
+		&::after {
+			@include pos($t: 9, $r: -44px);
+			@include size(4px, 42px);
+			content: '';
+			background: #19bd9a;
+		}
+	}
+
+	&__slide-subtitle {
+		font-family: $SansPro;
+		text-transform: uppercase;
+		font-style: italic;
+		color: $grey;
+		letter-spacing: 1px;
+		margin-bottom: 28px;
+	}
+
+	&__slide-text {
+		color: $grey;
+		letter-spacing: 0.5px;
+		line-height: 25px;
+		padding-left: 670px;
+	}
+
+	&__pages {
+			
+		@include pos($b: 90px);
+		width: 100%;
+
+		.slick-dots {
+			display: flex;
+			justify-content: center;
+		}
+
+		li {
+			padding: 0 7px;
+
+			button {
+				@include size(10px);
+				border-radius: 50%;
+				border: 1px solid #19bd9a;
+				text-indent: -30px;
+				overflow: hidden;
+				cursor: pointer;
+				background: #fff;
+
+				&:hover {
+					background: #19bd9a;
+				}
+			}
+
+			&.slick-active {
+				button {
+					background: #19bd9a;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+.header {
+	height: 100vh;
+	background: #77644c url(../images/header.jpg);
+/*	filter: brightness(75%);*/
+	background-size: cover;
+	text-align: center;
+	padding-top: 40px;
+	position: relative;
+
+	&__navigation {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 215px;
+	}
+
+	&__items {
+		display: flex;
+		font-size: 16px;
+	}
+
+	&__item {
+		@include size(80px, 33px);
+		line-height: 33px;
+		margin-right: 12px;
+		border-radius: 50px;
+		border-width: 1px;
+		border-color: transparent;
+		border-style: solid;
+
+		&--active {
+			border-color: $white;
+		}
+
+		&:hover {
+			border-color: $white;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $white;
+	}
+
+	&__title {
+		font-family: $SansPro;
+		font-size: 35px;
+		line-height: 70px;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: 18px;
+	}
+
+	&__scroll {
+		@include pos($b: 75px, $l: 50%);
+		transform: translateX(-50%);
+		width: 36px;
+		height: 36px;
+		background: url(../images/scroll.png);
+		cursor: pointer;
+	}
+}

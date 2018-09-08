@@ -1,0 +1,15 @@
+.google-map {
+	height: 440px;
+	text-align: left;
+
+	&__title {
+		color: #000;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 5px;
+	}
+
+	&__description {
+		color: #000;
+	}
+}

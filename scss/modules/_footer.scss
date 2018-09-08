@@ -1,0 +1,24 @@
+.footer {
+	padding: 70px 0;
+	text-align: center;
+
+	&__logo {
+		margin-bottom: 22px;
+	}
+
+	&__copyright {
+		margin-bottom: 35px;
+		color: $grey;
+	}
+
+	&__share {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__icon {
+		margin-right: 10px;
+	}
+}

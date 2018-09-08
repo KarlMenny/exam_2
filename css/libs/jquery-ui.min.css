@@ -1,0 +1,14 @@
+.ui-tabs-active .tabs__link  {
+	color: #fff;
+}
+
+.ui-tabs-active .tabs__text::after {
+	content: '';
+	height: 2px;
+	width: 120%;
+	background: #fff;
+	position: absolute;
+	top: 56.2px;
+	left: 50%;
+	transform: translateX(-50%);
+}
